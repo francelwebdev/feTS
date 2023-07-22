@@ -35,7 +35,7 @@ export type CORSOptions =
 Here's an example configuration using `CORSOptions`:
 
 ```ts
-import { createRouter } from 'fets'
+import { createRouter, useCORS } from 'fets'
 
 const router = createRouter({
   plugins: [
@@ -61,7 +61,7 @@ Access-Control-Allow-Headers: X-Custom-Header
 Alternatively, you can use a builder function that takes your request and constructs the options:
 
 ```ts
-import { createRouter } from 'fets'
+import { createRouter, useCORS } from 'fets'
 
 const router = createRouter({
   plugins: [
